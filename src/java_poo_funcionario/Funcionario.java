@@ -7,23 +7,16 @@ public class Funcionario {
 	private String dataNascimento;
 	private String email;
 	private String telefone;
-	private String cargo;
-	private String departamento;
 	private float salario;
-	private String dataDeEntrada;
 	
-	public Funcionario(int id, String nome, String dataNascimento, String email, String telefone, String cargo,
-			String departamentoString, float salario, String dataDeEntrada) {
+	public Funcionario(int id, String nome, String dataNascimento, String email, String telefone, float salario) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
 		this.email = email;
 		this.telefone = telefone;
-		this.cargo = cargo;
-		this.departamento = departamentoString;
 		this.salario = salario;
-		this.dataDeEntrada = dataDeEntrada;
 	}
 	public int getId() {
 		return id;
@@ -55,30 +48,13 @@ public class Funcionario {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	public String getCargo() {
-		return cargo;
-	}
-	public void setCargo(String cargo) {
-		this.cargo = cargo;
-	}
-	public String getDepartamentoString() {
-		return departamento;
-	}
-	public void setDepartamentoString(String departamentoString) {
-		this.departamento = departamentoString;
-	}
 	public double getSalario() {
 		return salario;
 	}
 	public void setSalario(float salario) {
 		this.salario = salario;
 	}
-	public String getDataDeEntrada() {
-		return dataDeEntrada;
-	}
-	public void setDataDeEntrada(String dataDeEntrada) {
-		this.dataDeEntrada = dataDeEntrada;
-	}
+	
 	
 	public void visualizar() {
 		System.out.println("\n=======================================\n");
@@ -89,10 +65,7 @@ public class Funcionario {
 		System.out.println("Data de nascimento: " + this.dataNascimento);
 		System.out.println("E-mail: " + this.email);
 		System.out.println("Telefone: " + this.telefone);
-		System.out.println("Cargo: " + this.cargo);
-		System.out.println("Departamento: " + this.departamento);
 		System.out.println("Salário: " + this.salario);
-		System.out.println("Data de Entrada: " + this.dataDeEntrada);
 	}
 
 }
